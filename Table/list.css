@@ -1,0 +1,123 @@
+:root {
+  place-content: center;
+  box-sizing: border-box;
+  background-color: burlywood;
+  border-color: black;
+  border-width: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  color: rgb(254, 250, 250);
+  padding-bottom: 10px;
+}
+h1 {
+  text-shadow: 2px 0 0 rgb(6, 6, 6), -2px 0 0 rgb(6, 6, 6), 0 2px 0 rgb(6, 6, 6),
+    0 -2px 0 rgb(11, 11, 11), 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff;
+  align-content: center;
+  text-align: center;
+  font: 100;
+  color: aliceblue;
+}
+.page,
+.NAV {
+  padding: 0;
+  margin: 20px;
+  align-items: center;
+  align-content: center;
+  width: 1300px;
+  background-color: brown;
+  display: flexbox;
+}
+
+.listItems {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: 20px;
+}
+.listItems:hover {
+  background-color: brown;
+  /* transform: translateX(0px) skew(-20deg) */
+}
+.list {
+  display: grid;
+  grid-row: 200px;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+}
+img {
+  padding: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #fff;
+  margin-right: 16px;
+}
+.values {
+  text-transform: capitalize;
+}
+.divBtn {
+  display: grid;
+  place-items: center;
+}
+.Btnn {
+  padding: 18px 30px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ff4655;
+  border-radius: 0;
+  min-width: 200px;
+  color: #fff;
+  z-index: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.Btnn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -50px;
+  width: 150%;
+  height: 100%;
+  background: #14202d;
+  transition: all 0.7s ease-in-out;
+  z-index: -1;
+  transform: translateX(-300px) skew(-20deg);
+}
+.Btnn:hover::before {
+  transform: translateX(0px) skew(-20deg);
+}
+.counter {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  float: right;
+  margin-right: 950px;
+  border-radius: 100px;
+  align-items: center;
+  padding: 0;
+}
+.input {
+  text-align: center;
+  place-items: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+.btnn{
+    cursor: pointer;
+    box-sizing: border-box;
+    z-index: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}

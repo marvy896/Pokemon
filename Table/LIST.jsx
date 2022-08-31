@@ -1,12 +1,12 @@
 import React from "react";
 import "./list.css";
 
-export default function LIST({ value }) {
+export default function LIST({ name, img, url }) {
 
   return (
-    <div className="listItems" onClick={() => {alert(value.id)}} >
-      <img src={value.image} />
-      <div className="values">{value.id}</div>
+    <div className="listItems" onClick={() => {alert(url)}} >
+      <img src={img} />
+      <div className="values">{name}</div>
     </div>
   );
 }

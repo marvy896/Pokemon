@@ -1,12 +1,14 @@
 import React from "react";
 import "./list.css";
+import { Link} from 'react-router-dom';
 
-export default function LIST({ name, img, url }) {
 
+export default function LIST({ name, img, url, id}) {
   return (
-    <div className="listItems" onClick={() => {alert(url)}} >
+     <Link to={`/character/${id}`} className="listItems">
       <img src={img} />
       <div className="values">{name}</div>
-    </div>
+      <div>{url}</div>
+      </Link>
   );
 }
